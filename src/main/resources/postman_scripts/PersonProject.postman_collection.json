@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "49a8db00-c400-40c1-9801-02e2d034bb1d",
+		"name": "PersonProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreatePersonEntry",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json;charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"person\": [\r\n    {\r\n      \"first_name\": \"Joyal\",\r\n      \"second_name\": \"Augustine\",\r\n      \"age\": 29,\r\n      \"favourite_colour\": \"yellow\",\r\n      \"hobby\": [\r\n        \"formula one\",\r\n        \"reading\"\r\n      ]\r\n    },\r\n    {\r\n      \"first_name\": \"Mohan\",\r\n      \"second_name\": \"Kumar\",\r\n      \"age\": 25,\r\n      \"favourite_colour\": \"red\",\r\n      \"hobby\": [\r\n        \"Dancing\"\r\n      ]\r\n    }\r\n  ]\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{host}}/person-project/v1/persons",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"person-project",
+						"v1",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

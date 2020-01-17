@@ -1,0 +1,23 @@
+{
+  "person": [
+    {
+      "first_name": "Joyal",
+      "second_name": "Augustine",
+      "age": 29,
+      "favourite_colour": "yellow",
+      "hobby": [
+        "formula one",
+        "reading"
+      ]
+    },
+    {
+      "first_name": "Mohan",
+      "second_name": "Kumar",
+      "age": 25,
+      "favourite_colour": "red",
+      "hobby": [
+        "Dancing"
+      ]
+    }
+  ]
+}

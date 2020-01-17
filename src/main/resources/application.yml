@@ -1,0 +1,8 @@
+server:
+  port: ${api_port:8082}
+  servlet:
+    context-path: /person-project
+  compression:
+    enabled: true
+    min-response-size: 1024
+    mime-types: application/json
