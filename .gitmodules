@@ -1,0 +1,3 @@
+[submodule "FrondEnd/person-project-ui"]
+	path = FrondEnd/person-project-ui
+	url = https://github.com/joyalaugustine/person-project-ui.git
