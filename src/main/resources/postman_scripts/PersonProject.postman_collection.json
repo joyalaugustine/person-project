@@ -8,7 +8,136 @@
 		{
 			"name": "CreatePersonEntry",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json;charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"person\": [\n        {\n            \"firstName\": \"Joyal\",\n            \"lastName\": \"Augustine\",\n            \"age\": 29,\n            \"favouriteColour\": \"yellow\",\n            \"hobby\": [\n                \"formula one\",\n                \"reading\"\n            ]\n        },\n        {\n            \"firstName\": \"Mohan\",\n            \"lastName\": \"Kumar\",\n            \"age\": 25,\n            \"favouriteColour\": \"red\",\n            \"hobby\": [\n                \"Dancing\"\n            ]\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{host}}/person-project/v1/persons",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"person-project",
+						"v1",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyPersonEntry",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "hello",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "1",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Joyal\",\n    \"second_name\": \"Augustine\",\n    \"age\": 29,\n    \"favourite_colour\": \"green\",\n    \"hobby\": [\n        \"formula one\",\n        \"reading\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{host}}/person-project/v1/persons/20",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"person-project",
+						"v1",
+						"persons",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllPersonEntries",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
 				"header": [
 					{
 						"key": "Accept",
@@ -23,7 +152,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"person\": [\r\n    {\r\n      \"first_name\": \"Joyal\",\r\n      \"second_name\": \"Augustine\",\r\n      \"age\": 29,\r\n      \"favourite_colour\": \"yellow\",\r\n      \"hobby\": [\r\n        \"formula one\",\r\n        \"reading\"\r\n      ]\r\n    },\r\n    {\r\n      \"first_name\": \"Mohan\",\r\n      \"second_name\": \"Kumar\",\r\n      \"age\": 25,\r\n      \"favourite_colour\": \"red\",\r\n      \"hobby\": [\r\n        \"Dancing\"\r\n      ]\r\n    }\r\n  ]\r\n}\r\n"
+					"raw": ""
 				},
 				"url": {
 					"raw": "{{host}}/person-project/v1/persons",
@@ -34,6 +163,94 @@
 						"person-project",
 						"v1",
 						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPersonEntry",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/person-project/v1/persons/20",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"person-project",
+						"v1",
+						"persons",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePersonEntry",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/person-project/v1/persons/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"person-project",
+						"v1",
+						"persons",
+						"1"
 					]
 				}
 			},
