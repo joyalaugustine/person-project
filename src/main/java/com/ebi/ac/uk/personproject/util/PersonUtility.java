@@ -30,7 +30,7 @@ public class PersonUtility {
                 .lastName(personDTO.getLastName())
                 .age(personDTO.getAge())
                 .favouriteColour(personDTO.getFavouriteColour())
-                .hobbyList(personDTO.getHobbyList())
+                .hobbyList(personDTO.getHobbyValues())
                 .build();
     }
 }

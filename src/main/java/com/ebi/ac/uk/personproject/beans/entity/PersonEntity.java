@@ -4,6 +4,7 @@
 
 package com.ebi.ac.uk.personproject.beans.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -44,5 +45,6 @@ public class PersonEntity {
 
     @Column
     @ElementCollection(targetClass=String.class)
+    @JsonProperty("hobby")
     private List<String> hobbyList;
 }

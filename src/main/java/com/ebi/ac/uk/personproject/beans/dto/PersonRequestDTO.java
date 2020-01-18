@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -22,5 +23,6 @@ import java.util.List;
 public class PersonRequestDTO {
 
     @JsonProperty("person")
+    @Valid
     private List<PersonDTO> personDTOList;
 }

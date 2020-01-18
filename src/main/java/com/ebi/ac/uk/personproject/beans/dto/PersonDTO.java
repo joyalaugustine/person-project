@@ -4,6 +4,7 @@
 
 package com.ebi.ac.uk.personproject.beans.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -39,7 +40,7 @@ public class PersonDTO {
     @NotEmpty
     private String favouriteColour;
 
-    @NotEmpty
     @JsonProperty("hobby")
-    private List<String> hobbyList;
+    @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
+    private List<String> hobbyValues;
 }

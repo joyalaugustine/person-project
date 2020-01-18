@@ -224,7 +224,22 @@
 		{
 			"name": "DeletePersonEntry",
 			"request": {
-				"method": "DELETE",
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
 				"header": [
 					{
 						"key": "Accept",
@@ -239,10 +254,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": ""
+					"raw": "1"
 				},
 				"url": {
-					"raw": "{{host}}/person-project/v1/persons/1",
+					"raw": "{{host}}/person-project/v1/persons/delete",
 					"host": [
 						"{{host}}"
 					],
@@ -250,7 +265,7 @@
 						"person-project",
 						"v1",
 						"persons",
-						"1"
+						"delete"
 					]
 				}
 			},

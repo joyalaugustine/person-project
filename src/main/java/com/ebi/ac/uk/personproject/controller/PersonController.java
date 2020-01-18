@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
@@ -63,14 +64,14 @@ public class PersonController {
         return person.get();
     }
 
-    @DeleteMapping("/persons/{id}")
-    public void deletePersonEntry(@PathVariable long id) {
+    @PostMapping("/persons/delete")
+    public void deletePersonEntry(@RequestBody long id) {
         log.info(PERSON_ID, id);
         personService.deleteById(id);
     }
 
     @PostMapping("/persons")
-    public ResponseEntity<Object> createPersonEntry(@RequestBody PersonRequestDTO person) {
+    public ResponseEntity<Object> createPersonEntry(@Valid @RequestBody PersonRequestDTO person) {
 
         log.info("Person: {}", person);
 
@@ -83,7 +84,7 @@ public class PersonController {
     }
 
     @PutMapping("/persons/{id}")
-    public ResponseEntity<PersonEntity> updatePersonEntry(@RequestBody PersonDTO person, @PathVariable long id) {
+    public ResponseEntity<PersonEntity> updatePersonEntry(@Valid @RequestBody PersonDTO person, @PathVariable long id) {
 
         log.info(PERSON_ID, id);
         Optional<PersonEntity> personOptional = personService.retrievePersonEntry(id);
