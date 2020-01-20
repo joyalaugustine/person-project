@@ -55,8 +55,10 @@ Postman scripts include the authentication details. <br>
 
 This Project is made possible by the following technologies
 
-[<b>Spring boot</b>](https://spring.io/projects/spring-boot)<br>
+[<b>Spring Boot</b>](https://spring.io/projects/spring-boot)<br>
+[<b>Spring Security</b>](https://spring.io/projects/spring-security)<br>
+[<b>Spring Data JPA</b>](https://spring.io/projects/spring-data-jpa)<br>
 [<b>Apache Maven</b>](https://maven.apache.org/)<br>
 [<b>Project Lombok</b>](https://projectlombok.org/)<br>
-[<b>Spring Data JPA</b>](https://spring.io/projects/spring-data-jpa)<br>
-[<b>H2 Database Engine(In memory, Auto configured)</b>](https://www.h2database.com/html/main.html)
+[<b>H2 Database Engine(In memory, Auto configured)</b>](https://www.h2database.com/html/main.html)<br>
+[<b>Logback</b>](http://logback.qos.ch/)
