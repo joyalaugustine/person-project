@@ -33,7 +33,7 @@ Information about all 3 environments are provided wth the Postman Json Collectio
 ![Cloud](https://i.imgur.com/LrtX9Zs.png)
 ## Frond-End
 
-Person Project make use of a frond-end app developed in Angular JS.
+Person Project makes use of a frond-end app developed in Angular.
 This Project is added as a Git sub-module to this repository <br>
 
 [<b>person-project-ui</b>](https://github.com/joyalaugustine/person-project/tree/master/FrondEnd)
