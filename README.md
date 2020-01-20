@@ -16,6 +16,7 @@ Run the Jar file :
 
 ![Launch](https://i.imgur.com/uSdWwx7.png)
 
+## Demo
 ![Demo](https://i.imgur.com/zOBPBB9.gif)
 
 ## Access a deployed version on cloud 
