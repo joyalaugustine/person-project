@@ -19,16 +19,18 @@ Run the Jar file :
 ![Launch](https://i.imgur.com/uSdWwx7.png)
 ## Access a deployed version on cloud 
 
-Person Project is deployed on the following solutions.
+Person Project is deployed on the following platforms.
 
 [<b>Heroku PaaS</b>](https://person-project-heroku.herokuapp.com/person-project) <br>
 [<b>AWS Elastic Beanstalk</b>](http://personproject-env.tjbyud53yc.us-east-2.elasticbeanstalk.com/person-project/)<br>
 [<b>Microsoft Azure</b>](https://person-project.azurewebsites.net/person-project/v1/)
 
 
-Information about all 3 environments are provided wth the Postman Json Collection <br>
+Information about all three environments are provided as a Postman Environment <br>
 
 [<b>Environment Information (/Environments)</b>](../master/src/main/resources/postman_scripts/)
+
+Please download Postman from here https://www.getpostman.com/
 
 ![Cloud](https://i.imgur.com/LrtX9Zs.png)
 ## Frond-End
@@ -51,7 +53,7 @@ Postman scripts include the authentication details. <br>
 
 ## Development Details
 
-This Project used the following features.
+This Project is made possible by the following technologies
 
 [<b>Spring boot</b>](https://spring.io/projects/spring-boot)<br>
 [<b>Apache Maven</b>](https://maven.apache.org/)<br>
