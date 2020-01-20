@@ -3,8 +3,6 @@
 [![Build Status](https://travis-ci.org/mockito/mockito.svg?branch=release/3.x)](https://dashboard.heroku.com/apps/person-project-heroku/activity/builds/1ff8b658-9392-4624-9867-cadf186997ff)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-![Demo](https://i.imgur.com/zOBPBB9.gif)
-
 ## Compiling & Building in local
 
 To build locally: 
@@ -17,6 +15,9 @@ Run the Jar file :
 >**```java -jar target/person-project-0.0.1-SNAPSHOT.jar```**
 
 ![Launch](https://i.imgur.com/uSdWwx7.png)
+
+![Demo](https://i.imgur.com/zOBPBB9.gif)
+
 ## Access a deployed version on cloud 
 
 Person Project is deployed on the following platforms.
