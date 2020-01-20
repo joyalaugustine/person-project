@@ -16,9 +16,6 @@ Run the Jar file :
 
 ![Launch](https://i.imgur.com/uSdWwx7.png)
 
-## Demo
-![Demo](https://i.imgur.com/zOBPBB9.gif)
-
 ## Access a deployed version on cloud 
 
 Person Project is deployed on the following platforms.
@@ -43,6 +40,9 @@ This Project is added as a Git sub-module to this repository <br>
 [<b>person-project-ui</b>](https://github.com/joyalaugustine/person-project/tree/master/FrondEnd)
 
 ![Frond-end](https://i.imgur.com/TsivhcX.png)
+
+## Demo
+![Demo](https://i.imgur.com/zOBPBB9.gif)
 
 ## Authentication
 
