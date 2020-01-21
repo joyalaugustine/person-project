@@ -64,3 +64,7 @@ This Project is made possible by the following technologies
 [<b>Project Lombok</b>](https://projectlombok.org/)<br>
 [<b>H2 Database Engine(In memory, Auto configured)</b>](https://www.h2database.com/html/main.html)<br>
 [<b>Logback</b>](http://logback.qos.ch/)
+[<b>Junit 5</b>](https://junit.org/junit5/)<br>
+[<b>Mockito</b>](https://site.mockito.org//)<br>
+
+![Building blocks](https://i.imgur.com/fpNIcM6.png)
