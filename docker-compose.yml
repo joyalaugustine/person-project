@@ -1,0 +1,52 @@
+version: '0.1'
+
+services:
+  person_project:
+    image: person-project:latest
+    ports:
+      - "8082:8082"
+    environment:
+      API_PORT : 8082
+
+  #Logging
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.5.2
+    container_name: elasticsearch
+    volumes:
+      - data02:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.5.2
+    container_name: kibana
+    ports:
+      - 5602:5601
+    environment:
+      ELASTICSEARCH_HOSTS: http://localhost:9200/
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+
+    links:
+      - es:elasticsearch
+
+  fluentd:
+    image: fluent/fluentd
+    ports:
+      - "24224:24224"
+
+
+volumes:
+  data01:
+    driver: local
+  data02:
+    driver: local
+  data03:
+    driver: local
+
+networks:
+  elastic:
+    driver: bridge      -
