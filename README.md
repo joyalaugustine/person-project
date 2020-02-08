@@ -1,7 +1,6 @@
 
 ## Person Project : An App for CRUD
 [![Build Status](https://travis-ci.org/mockito/mockito.svg?branch=release/3.x)](https://dashboard.heroku.com/apps/person-project-heroku/activity/builds/1ff8b658-9392-4624-9867-cadf186997ff)
-[![Build Status](https://travis-ci.com/joyalaugustine/person-project.svg?branch=master)](https://travis-ci.com/joyalaugustine/person-project)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Compiling & Building in local
