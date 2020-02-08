@@ -1,8 +1,9 @@
 
 ## Person Project : An App for CRUD
-[![Build Status](https://travis-ci.com/joyalaugustine/person-project.svg?branch=master)](https://travis-ci.com/joyalaugustine/person-project)
+
+[![Travis Build Status](https://travis-ci.com/joyalaugustine/person-project.svg?branch=master)](https://travis-ci.com/joyalaugustine/person-project)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.ebi.ac.uk%3Aperson-project&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.ebi.ac.uk%3Aperson-project)
+[![Sonar Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.ebi.ac.uk%3Aperson-project&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.ebi.ac.uk%3Aperson-project)
 
 
 ## Compiling & Building in local
