@@ -1,5 +1,5 @@
 
-## Person Project : An App for CRUD
+## Person Project : [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) App
 
 [![Travis Build Status](https://travis-ci.com/joyalaugustine/person-project.svg?branch=master)](https://travis-ci.com/joyalaugustine/person-project)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
